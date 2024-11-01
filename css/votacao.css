@@ -1,0 +1,62 @@
+/* 
+    Document   : WPVOTACAO PLUGIN
+    Created on : 09/11/2010, 11:09:42
+    Description: FOLHA DE ESTILOS DO PLUGIN DE VOTACAO
+*/
+#box-confirm-vote ul li{
+    list-style: none;
+    margin: 10px 0px 0px 0px;
+}
+
+#box-confirm-vote
+
+#box-confirm-vote p {
+    font-family: Verdana,Arial;
+    font-size: 14px;
+}
+#box-confirm-vote .erro {
+    color: crimson;
+    font-weight: bold;
+}
+
+#box-confirm-vote p span{
+    color: limegreen;
+}
+
+#box-votar label{
+    display: block;
+    font-weight: bold;
+}
+
+#box-votar ul li{
+    list-style: none;
+    margin: 10px 0px 0px 0px;
+}
+
+#box-votar .erro{
+    color: crimson;
+    font-weight: bold;
+}
+
+#box-votar input#butFechar {
+    background:none repeat scroll 0 0 coral;
+    border:1px solid #BBBBBB;
+    color:#000000;
+    font-size:12px;
+    padding:5px;
+    font-weight: bold;
+    color:
+}
+
+#box-votar input#butVotar {
+    background:none repeat scroll 0 0 #FFFFFF;
+    border:1px solid #BBBBBB;
+    color:#000000;
+    font-size:12px;
+    padding:4px;
+    font-weight: bold;
+}
+
+#box-votar p {
+    margin: 10px 0px 0px 0px;
+}

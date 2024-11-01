@@ -1,0 +1,39 @@
+<div id="box-votacao" style="display: block">
+    <p id="qtd-votos">Quantidade de Votos: <span>#QTD_VOTOS#</span> <a href="#" style="cursor: pointer" id="link-voto">Votar</a></p>
+</div>
+<div id="box-votar" style="#BOX_VOTAR#">
+    <form action="#LINK_VOTACAO#?vote=now" name="form-votacao" method="post">
+        <h2>Confirmação de Voto</h2>
+        <ul>
+            <li>
+                <label>Email: <input type="text" size="30" maxlength="255" name="emailVoto" value="#emailVoto#"/></label>
+                <span class="erro">#EMAIL_MSG#</span>
+            </li>
+            <li>
+                <img border="1" src="#PATH_CAPTCHA#?postid=#POSTID#" alt="código" title="Informe este código no campo abaixo" />
+            </li>
+            <li>
+                <label>Informe o código acima: <input type="text" size="10" maxlength="6" name="codCaptcha"/></label>
+                <span class="erro">#COD_MSG#</span>
+            </li>
+            <li>
+                <p>
+                    <input name="butVotar" id="butVotar" value="Votar" type="submit" />
+                    <input name="butFechar" id="butFechar" value="Fechar" type="button" />
+                <p>
+            </li>
+        </ul>
+    </form>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#link-voto").click(function(){
+            $("#box-votar").show();
+            return false;
+        }) ;
+        $("#butFechar").click(function(){
+            $("#box-votar").hide();
+        }) ;
+    });
+</script>
+

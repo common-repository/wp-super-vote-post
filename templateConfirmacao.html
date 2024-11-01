@@ -1,0 +1,19 @@
+<div id="box-confirm-vote">
+    <a name="confirma"></a>
+    <form action="#LINK_VOTACAO#?email=#EMAIL#&confirmvote=true&idvoto=#IDVOTO#&confirm=now#confirma" name="form-votacao" method="post">
+        <h2>Confirmação de Voto</h2>
+        <p class="erro">#MSG_ERRO#</p>
+        <ul>
+            <li>
+                <label>Email: <input type="text" size="30" maxlength="255" name="emailVoto" value="#EMAIL#"/></label>
+            </li>
+            <li>
+                <label>Informe seu código de confirmação enviado por email: <input type="text" size="10" maxlength="25" name="codConfirm"/></label>
+            </li>
+            <li>
+                <input name="butVotar" id="butVotar" value="Confirmar" type="submit" />
+            </li>
+        </ul>
+    </form>
+    
+</div>
